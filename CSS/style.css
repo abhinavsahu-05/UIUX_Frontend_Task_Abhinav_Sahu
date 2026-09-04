@@ -104,12 +104,12 @@ a {
     position: relative;
     width: 100%;
     min-height: 550px;
-    background-color: #1a2332;
+    background-image:url('../images/drone3.avif');
     background-size: cover;
-    background-position: center;
+    background-position: top center ;
     display: flex;
     align-items: center;
-    padding: 60px 0;
+    padding: 5px 0 60px 0;
     border-bottom: 1px solid #1F2937;
 }
 
@@ -131,12 +131,6 @@ a {
     color: #FFFFFF;
 }
 
-.hero-text-content p {
-    color: #E5E7EB;
-    font-size: 0.95rem;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
 
 .hero-buttons {
     display: flex;
@@ -144,9 +138,9 @@ a {
 }
 
 .btn-green-dark {
-    background-color: #0d4a30;
-    color: #FFFFFF;
-    padding: 12px 24px;
+    background-color: #22c55e;
+    color: black;
+    padding: 10px 35px;
     border-radius: 6px;
     font-weight: 600;
     display: inline-block;
@@ -368,16 +362,29 @@ a {
 }
 
 .footer-links a:hover {
-    color: black;
+    color: gray;
 }
 
-/* Responsive Media Queries */
+/* Responsive Media Queries (Navbar & Grids) */
 @media (max-width: 900px) {
+    /* Navbar Responsiveness */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
     .grid-3 {
         grid-template-columns: 1fr;
     }
     .hero-text-content {
-        text-align: center;
+        text-align: start center;
         max-width: 100%;
     }
     .hero-buttons {
